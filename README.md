@@ -1,12 +1,12 @@
-# CPSC 224 Final Project: [Your project name here]
+# CPSC 224 Final Project: Horse Racing Game
 
 ### Project Description:
 
 
 ### Team Information:
 
-- Team Name:  
-- Students on team:
+- Team Name:  Buddies
+- Students on team: Jaden, Junyou, Xinye
 - Semester: Spring 2024
 
 
