@@ -55,6 +55,16 @@ public class horse extends JLabel {
 		this.addMouseListener(controller);
 	}
 
+	public horseState getState() 
+	{
+		return state;
+	}
+
+	public char getValue() 
+	{
+		return value;
+	}
+
 	public void roll() 
 	{
 
