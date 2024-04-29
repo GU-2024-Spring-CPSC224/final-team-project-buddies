@@ -11,6 +11,8 @@ public class MainGame {
     private JButton startButton;
     private JButton resetButton;
     private JLabel[] horses;
+    
+    JTextField playerNames = new JTextField();
 
     public MainGame() {
         frame = new JFrame("Horse Racing Game");
