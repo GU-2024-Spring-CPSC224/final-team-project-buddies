@@ -17,10 +17,10 @@ public class ShowHorseBox extends ShowHorsePanel implements ActionListener
     {
         super(horse);
         this.notifyChange = notifyChange;
-        setBounds(100+pos_x*250,100,230,300);
-        selectBtn= new JButton("Choice");
+        setBounds(100 + pos_x * 250, 100, 230, 300);
+        selectBtn = new JButton("Choice");
         add(selectBtn);
-        selectBtn.setBounds(50,250,100,30);
+        selectBtn.setBounds(50, 250, 100, 30);
         selectBtn.addActionListener(this);
     }
 

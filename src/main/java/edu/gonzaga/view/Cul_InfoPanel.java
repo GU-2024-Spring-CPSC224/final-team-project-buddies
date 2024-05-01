@@ -10,7 +10,7 @@ public class Cul_InfoPanel extends JPanel
     private JLabel wealthLabel ;
     private JLabel horseNameLabel;
     private JLabel levelLabel;
-    private JLabel  tipLabel;
+    private JLabel tipLabel;
 
     public Cul_InfoPanel(int wealth, HorseBase horse)
     {

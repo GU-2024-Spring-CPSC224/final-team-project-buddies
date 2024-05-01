@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class TrainBtnActionListener implements ActionListener 
+public class TrainBtnActionListener implements ActionListener
 {
     public JButton runTrainBtn;
     public JButton speedTrainBtn;
@@ -27,7 +27,6 @@ public class TrainBtnActionListener implements ActionListener
         this.runTrainBtn = runTrainBtn;
         this.speedTrainBtn = speedTrainBtn;
         this.enduranceTrainBtn = enduranceTrainBtn;
-
     }
     @Override
     public void actionPerformed(ActionEvent e) {

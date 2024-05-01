@@ -527,7 +527,7 @@ public class MainView extends JFrame implements ActionListener
         Font itemFont =new Font("Times New Roman",Font.BOLD,30);
 
 
-        JLabel assetTitleLabel = new JLabel("Dposit");
+        JLabel assetTitleLabel = new JLabel("Deposit");
         assetTitleLabel.setFont(titileFont);
         assetInfoPanel.add(assetTitleLabel);
 
