@@ -233,7 +233,7 @@ public class MainView extends JFrame implements ActionListener
         tabPanel.addTab("Stable",mainViewPanelInfo.stablePanel);
         tabPanel.addTab("Infomation",mainViewPanelInfo.infoPanel);
 
-        tabPanel.setFont(new Font("Times New Roman",Font.BOLD,42));
+        tabPanel.setFont(new Font("Times New Roman",Font.BOLD,28));
 
 
     }
