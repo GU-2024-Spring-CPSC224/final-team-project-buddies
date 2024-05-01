@@ -18,7 +18,7 @@ public class Cul_InfoPanel extends JPanel
         {
             public void setText(String text)
             {
-                super.setText("Deposit："+text);
+                super.setText("Deposit:"+text);
             }
         };
 
@@ -26,7 +26,7 @@ public class Cul_InfoPanel extends JPanel
         {
             public void setText(String text)
             {
-                super.setText("Name："+text);
+                super.setText("Name:"+text);
             }
         };
 
