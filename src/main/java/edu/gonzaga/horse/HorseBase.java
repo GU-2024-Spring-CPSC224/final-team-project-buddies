@@ -54,16 +54,33 @@ public abstract class HorseBase extends JPanel {
     }
 
 
-    public void switchHorseImg()
-    {
-        switch (stateImg)
-        {
-            case 0: horseLabel.setIcon(images[0]); stateImg++; break;
-            case 1: horseLabel.setIcon(images[1]); stateImg++; break;
-            case 2: horseLabel.setIcon(images[2]); stateImg++; break;
-            case 3: horseLabel.setIcon(images[3]); stateImg=0; break;
+    public void switchHorseImg() {
+        try {
+            switch (stateImg) {
+                case 0:
+                    horseLabel.setIcon(images[0]);
+                    stateImg++;
+                    Thread.sleep(0);
+                    break;
+                case 1:
+                    horseLabel.setIcon(images[1]);
+                    stateImg++;
+                    Thread.sleep(0);
+                    break;
+                case 2:
+                    horseLabel.setIcon(images[2]);
+                    stateImg++;
+                    Thread.sleep(0);
+                    break;
+                case 3:
+                    horseLabel.setIcon(images[3]);
+                    stateImg=0;
+                    Thread.sleep(0);
+                    break;
+            }
+        } catch (InterruptedException e) {
+            // Do nothing
         }
-
     }
     public void rest()
     {
