@@ -38,7 +38,7 @@ public class Cul_InfoPanel extends JPanel
             }
         };
 
-        tipLabel = new JLabel("Recent horse：");
+        tipLabel = new JLabel("Recent horse ");
 
         setLayout(null);
         Font font = new Font("Times New Roman",Font.BOLD,20);
