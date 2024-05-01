@@ -32,7 +32,7 @@ public class GoodsPanel extends JPanel implements ActionListener
         imgLabel = new JLabel();
         nameLabel = new JLabel();
         priceLabel = new JLabel();
-        buyBtn = new JButton("Buy for feed");
+        buyBtn = new JButton("Purchase");
 
         this.price = price;
         this.priceLabel.setText(price+" $");
