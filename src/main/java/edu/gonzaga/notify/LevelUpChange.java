@@ -30,7 +30,7 @@ public class LevelUpChange implements INotifyChange
     public boolean isLevelUp(){
         Random random = new Random();
         int n = random.nextInt(1000);
-        if (n < 50)
+        if (n < 500)
         {
             notifyChange(matchHorses.getSelectedHorse().getLevel()+1);
             JOptionPane.showConfirmDialog(null,"Level Up","Information",JOptionPane.DEFAULT_OPTION);
