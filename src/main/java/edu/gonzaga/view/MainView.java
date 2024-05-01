@@ -540,7 +540,7 @@ public class MainView extends JFrame implements ActionListener
         {
           public void setText(String text)
           {
-              super.setText("Having horses："+text);
+              super.setText("Having horses "+text);
           }
         };
 
