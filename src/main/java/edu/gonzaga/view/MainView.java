@@ -18,14 +18,14 @@ import java.awt.event.ActionListener;
 
 public class MainView extends JFrame implements ActionListener 
 {
-    public static MainViewPanelInfo mainViewPanelInfo= new MainViewPanelInfo();
+    public static MainViewPanelInfo mainViewPanelInfo = new MainViewPanelInfo();
     public static MatchPanelInfo matchPanelInfo = new MatchPanelInfo();
-    public static MasterAssets  masterAssets = new MasterAssets();
+    public static MasterAssets masterAssets = new MasterAssets();
 
     static InfoRecord infoRecord ;
     static MatchHorses matchHorses = new MatchHorses();
-    private static MainView instance;
 
+    private static MainView instance;
     JButton item1Btn;
     JButton item2Btn;
     JButton item3Btn;
@@ -62,16 +62,20 @@ public class MainView extends JFrame implements ActionListener
         instance = this;
     }
 
+    public boolean isFullyVisible() {
+        return isShowing();
+    }
+
+
+    public static MainView getInstance() {
+        return instance;
+    }
+
 
     /**
      * Switching boards for different purposes
      * @param matchSubPanelShow 
      */
-
-    public static MainView getInstance() {
-        return instance;
-    }
-    
     public static void adjustShow(MatchSubPanelShow matchSubPanelShow) 
     {
         if (matchSubPanelShow!=null)
@@ -102,7 +106,7 @@ public class MainView extends JFrame implements ActionListener
         {
             public void  setText(String text)
             {
-                super.setText("The rank is "+text);
+                super.setText("Your Ranking :"+text);
             }
         };
 
@@ -124,14 +128,14 @@ public class MainView extends JFrame implements ActionListener
 
            if (achievement!=null)
            {
-               sortTxtArea.append("No."+(n+1)+" "+achievement.name+"\t use time: "+achievement.time+"\n");
+               sortTxtArea.append("No."+(n+1)+" "+achievement.name+"\t Time: "+achievement.time+"\n");
                if (achievement.name==matchHorses.getSelectedHorse().getName()) {
                    {
                        headLabel.setText((n+1) + " ");
                        switch (n){
-                           case 0: infoRecord.firstTimesPlus();gainMoneyLabel.setText(15+"");assetsChange.notifyChange(masterAssets.wealth+15);break;
-                           case 1: gainMoneyLabel.setText(5+"");assetsChange.notifyChange(masterAssets.wealth+5);break;
-                           case 2: gainMoneyLabel.setText(-5+"");assetsChange.notifyChange(masterAssets.wealth-5);break;
+                           case 0: infoRecord.firstTimesPlus();gainMoneyLabel.setText(80+"");assetsChange.notifyChange(masterAssets.wealth+80);break;
+                           case 1: gainMoneyLabel.setText(30+"");assetsChange.notifyChange(masterAssets.wealth+30);break;
+                           case 2: gainMoneyLabel.setText(10+"");assetsChange.notifyChange(masterAssets.wealth+10);break;
                        }
                    }
                }
@@ -165,7 +169,7 @@ public class MainView extends JFrame implements ActionListener
         {
             public void setText(String txt)
             {
-                super.setText("The horse for now："+txt);
+                super.setText("The current horse:"+txt);
             }
         };
         
@@ -178,14 +182,14 @@ public class MainView extends JFrame implements ActionListener
         {
             public void setText(String text)
             {
-                super.setText("Deposit："+text);
+                super.setText("Deposit:"+text);
             }
         };
 
         firstNumLabel = new JLabel()
         {
             public void setText(String text){
-                super.setText("No.1 Times："+text);
+                super.setText("No.1 Times:"+text);
             }
         };
 
@@ -193,7 +197,7 @@ public class MainView extends JFrame implements ActionListener
         {
             public void setText(String text)
             {
-                super.setText("Times for enter game："+text);
+                super.setText("Turns you had played:"+text);
             }
         };
 
@@ -238,9 +242,9 @@ public class MainView extends JFrame implements ActionListener
         tabPanel.addTab("Start the game",mainViewPanelInfo.matchPanel);
         tabPanel.addTab("Training",mainViewPanelInfo.culturePanel);
         tabPanel.addTab("Stable",mainViewPanelInfo.stablePanel);
-        tabPanel.addTab("Infomation",mainViewPanelInfo.infoPanel);
+        tabPanel.addTab("Information",mainViewPanelInfo.infoPanel);
 
-        tabPanel.setFont(new Font("Times New Roman",Font.BOLD,28));
+        tabPanel.setFont(new Font("Times New Roman",Font.BOLD,42));
 
 
     }
@@ -270,7 +274,7 @@ public class MainView extends JFrame implements ActionListener
 
         selectPanel.setLayout(null);
 
-        JLabel tipLabel = new JLabel("Racing terms：");
+        JLabel tipLabel = new JLabel("Racing terms:");
         item1Btn = new JButton("4 miles");
         item2Btn = new JButton("6 miles");
         item3Btn = new JButton("8 miles");
@@ -497,7 +501,7 @@ public class MainView extends JFrame implements ActionListener
         {
             public void setText(String txt)
             {
-                super.setText("Having horses："+txt);
+                super.setText("Your horses："+txt);
             }
         };
         horseNumLabel.setText(masterAssets.getHorseNum() + " ");
@@ -582,4 +586,10 @@ public class MainView extends JFrame implements ActionListener
         firstNumLabel.setBounds(x,y+(height+space)*2,width,height);
 
     }
+
+
+
+
+
+
 }
