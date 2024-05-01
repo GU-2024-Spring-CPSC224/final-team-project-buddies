@@ -24,6 +24,7 @@ public class MainView extends JFrame implements ActionListener
 
     static InfoRecord infoRecord ;
     static MatchHorses matchHorses = new MatchHorses();
+    private static MainView instance;
 
     JButton item1Btn;
     JButton item2Btn;
@@ -58,6 +59,7 @@ public class MainView extends JFrame implements ActionListener
         culturePanel_Init();
         stablePanel_Init();
         infoPanel_Init();
+        instance = this;
     }
 
 
@@ -65,6 +67,11 @@ public class MainView extends JFrame implements ActionListener
      * Switching boards for different purposes
      * @param matchSubPanelShow 
      */
+
+    public static MainView getInstance() {
+        return instance;
+    }
+    
     public static void adjustShow(MatchSubPanelShow matchSubPanelShow) 
     {
         if (matchSubPanelShow!=null)
