@@ -122,9 +122,9 @@ public class MainView extends JFrame implements ActionListener
                    {
                        headLabel.setText((n+1) + " ");
                        switch (n){
-                           case 0: infoRecord.firstTimesPlus();gainMoneyLabel.setText(80+"");assetsChange.notifyChange(masterAssets.wealth+80);break;
-                           case 1: gainMoneyLabel.setText(30+"");assetsChange.notifyChange(masterAssets.wealth+30);break;
-                           case 2: gainMoneyLabel.setText(10+"");assetsChange.notifyChange(masterAssets.wealth+10);break;
+                           case 0: infoRecord.firstTimesPlus();gainMoneyLabel.setText(15+"");assetsChange.notifyChange(masterAssets.wealth+15);break;
+                           case 1: gainMoneyLabel.setText(5+"");assetsChange.notifyChange(masterAssets.wealth+5);break;
+                           case 2: gainMoneyLabel.setText(-5+"");assetsChange.notifyChange(masterAssets.wealth-5);break;
                        }
                    }
                }
