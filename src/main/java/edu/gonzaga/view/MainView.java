@@ -209,8 +209,8 @@ public class MainView extends JFrame implements ActionListener
      * Set up the initial panel
      */
     private  void windowInit(){
-        int width = 1300;
-        int height = 900;
+        int width = 1200;
+        int height = 800;
         setBounds((ScreenInfo.getScreenSize().width-width)/2,(ScreenInfo.getScreenSize().height-height)/2,width,height);
 
         this.setResizable(false);
