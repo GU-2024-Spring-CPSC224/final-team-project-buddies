@@ -315,7 +315,7 @@ public class MainView extends JFrame implements ActionListener
 
 
 
-        JLabel selHorseTipLabel = new JLabel("Recent horses：");
+        JLabel selHorseTipLabel = new JLabel("Recent horses:");
         matchPanelInfo.levelSelectPanel.add(selHorseTipLabel);
         selHorseTipLabel.setBounds(100,200,260,32);
         selHorseTipLabel.setFont(new Font("Times New Roman",Font.BOLD,30));
@@ -501,7 +501,7 @@ public class MainView extends JFrame implements ActionListener
         {
             public void setText(String txt)
             {
-                super.setText("Your horses："+txt);
+                super.setText("Your horses:"+txt);
             }
         };
         horseNumLabel.setText(masterAssets.getHorseNum() + " ");
